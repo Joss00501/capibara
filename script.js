@@ -262,3 +262,8 @@ function ReiniciarJuego() {
   capibara.classList.add("capibara-corriendo");
   contenedor.classList.remove("mediodia", "tarde", "noche");
 }
+
+gameOver.addEventListener("touchstart", function(ev) {
+    ev.preventDefault();
+    ReiniciarJuego();
+});
